@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="./main.css">
+    <style>
+        body {
+            color: #2e2e2e;
+            font-family: sans-serif;
+            font-size: 21px;
+            text-align: justify;
+            margin: 0 auto;
+        }
+
+        .container {
+            background-color: #3FABF2;
+            color: whitesmoke;
+            position: relative;
+            height: 89vh;
+            padding-top: 14vh;
+            box-sizing: border-box;
+        }
+
+        .cursor {
+            position: relative;
+        }
+
+        .cursor i {
+            position: absolute;
+            width: 1px;
+            height: 30px;
+            background-color: gray;
+            left: 0;
+            top: 0;
+            animation-name: blink;
+            animation-duration: 800ms;
+            animation-iteration-count: infinite;
+            opacity: 1;
+        }
+
+
+        @keyframes blink {
+            from {
+                opacity: 1;
+            }
+
+            to {
+                opacity: 0;
+            }
+        }
+    </style>
+    <title>Donkey-type|typing speed test</title>
+</head>
+
+<body>
+    <div id='wrapper'>
+
+    </div>
+    <div style="box-sizing:border-box;display:flex;justify-content:center;align-items:center; height: 100px;">
+        <h1>Donkey Type</h1>
+
+        <button class="ml-3 btn btn-primary" onclick="sentence()">Refresh<i class="fa fa-refresh"
+                aria-hidden="true"></i></button>
+    </div>
+
+    <div class="container">
+        <div class="cursor">
+            <div class="" id="sentence"></div>
+            <i></i>
+        </div>
+    </div>
+    <script src="./jquery-3.2.1.min.js"></script>
+    <script src="./bootstrap.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
